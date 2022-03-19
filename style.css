@@ -1,27 +1,16 @@
-@media screen and (max-width: 768px) {
-
-    /* Place Mobile Styling here */
-    .topnav{
-        float: center;
-        width: 100%;
-          }
-
-    .info{
-        float: center;
-        width: 100%;
-    }
-    .pets{
-        float: center;
-        width: 100%;
-    }
-  }
-  
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 header { 
-    align-content: right;
-    background-color: #70a48b;
-    vertical-align: top
-    
+    width: 100%;
+}
+
+footer {
+    width: 100%;
 }
 nav {
     float: right;
@@ -61,34 +50,90 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    height: 70px;
-    width: 66.66%;
+    /* height: 70px;
+    width: 66.66%; */
     border-radius: 10px;
     margin: auto;
 } 
-.pet1{
-
-}
-.pet2{
-
-}
-.pet3{
-
-}
-.pet4 {
-
-}
-.pet5{
-
+.imageContainer {
+    flex-grow: 1;
 }
 
-.pet6{
+.rightSide {
+    flex-grow: 2;
+    margin-left: 23%;
+    display: flex;
+    flex-direction: column;
+}
 
+.petTitle {
+    width: 100%;
+    margin: auto;
+    padding-left: 39%;
+}
+
+.petPic {
+    height: 300px;
+    width: 300px;
 }
 .footer {
     background-color: #70a48b;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 10 rem; 
+    height: 5 rem; 
 }
+
+@media screen and (max-width: 768px) {
+
+    /* Place Mobile Styling here */
+
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 1vh;
+    }
+
+    .topnav{
+        float: center;
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .info{
+        width: 100%;
+        flex-grow: 1;
+    }
+    .pets{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .petPic {
+        height: 400px;
+        width: 450px;
+        margin-left: 33%;
+    }
+
+    .rightSide {
+        width: 72%;
+        margin-left: 0%;
+    }
+    footer {
+        background-color: #70a48b;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 5 rem; 
+    }
+  }
