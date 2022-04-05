@@ -30,10 +30,13 @@ header {
     float: center; 
     display: flex;
 }
+nav {
+    padding-left: 100px;
+}
 .nav ul li {
     overflow: auto;
     margin: auto;
-    font-size: 20px;
+    font-size: 16px;
     display:inline-block;
     zoom: 1;
 }
@@ -145,9 +148,10 @@ body {
         float: right;
         padding-right: 150px;
         margin-top: 50px;
+        
     }
     nav, ul, li {
-            font-size: 20px;
+            font-size: 25px;
             display:inline-block;
             zoom: 1;
             padding-right: 20px;
