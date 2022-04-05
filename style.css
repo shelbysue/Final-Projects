@@ -28,20 +28,19 @@ header {
     border-color:white;
     border-radius: 20px;
     float: center; 
-    margin-top: 50px;
-    padding-top: 0px;
     display: flex;
 }
-.nav ul {
+.nav ul li {
     overflow: auto;
-    width: 150px;
     margin: auto;
-   
+    font-size: 20px;
+    display:inline-block;
+    zoom: 1;
 }
 
 body { 
     font-size: 30px;
-    padding-top: 225px;
+    padding-top: 300px;
     padding-bottom: 150px;
 
 }
@@ -145,6 +144,7 @@ body {
     nav {
         float: right;
         padding-right: 150px;
+        margin-top: 50px;
     }
     nav, ul, li {
             font-size: 20px;
